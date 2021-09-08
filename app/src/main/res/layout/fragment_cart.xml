@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DashboardModule.frgement.CartFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="@drawable/background">
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:scrollbars="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:paddingHorizontal="15dp"
+               android:paddingVertical="10dp"
+               android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:padding="5dp"
+               android:background="@drawable/box_10dp"
+               android:orientation="horizontal">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="16dp"
+                   android:layout_weight="1"
+                   android:background="@null"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/font_medium"
+                       android:text="Urin ROutine Examination"
+                       android:textColor="@color/textColor"
+                       android:textSize="16sp" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="3dp"
+                       android:fontFamily="@font/font_bold"
+                       android:gravity="center_vertical"
+                       android:text="$ 150"
+                       android:textColor="@color/textColor"
+                       android:textSize="16sp" />
+
+               </LinearLayout>
+
+               <ImageView
+                   android:id="@+id/ivDelete"
+                   android:layout_width="28dp"
+                   android:layout_height="28dp"
+                   android:layout_gravity="center"
+                   android:adjustViewBounds="true"
+                   android:layout_marginRight="10dp"
+                   android:src="@drawable/ic_delete"
+                   app:tint="@color/black" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/box_10dp">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/font_bold"
+                   android:gravity="center"
+                   android:layout_marginVertical="10dp"
+                   android:text="Bill Information"
+                   android:textColor="@color/textColor"
+                   android:textSize="18sp" />
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginHorizontal="3dp"
+                   android:background="@color/white"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="5dp"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="16dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:fontFamily="@font/font_regular"
+                           android:text="Sub Total"
+                           android:textColor="@color/textColor"
+                           android:textSize="16sp" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/font_bold"
+                           android:gravity="center"
+                           android:text="$150"
+                           android:textColor="@color/textColor"
+                           android:textSize="16sp" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="16dp"
+                       android:layout_marginTop="10dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:fontFamily="@font/font_regular"
+                           android:text="Discount"
+                           android:textColor="@color/textColor"
+                           android:textSize="16sp" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/font_bold"
+                           android:gravity="center"
+                           android:text="$ 0"
+                           android:textColor="@color/textColor"
+                           android:textSize="16sp" />
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="45dp"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:orientation="vertical">
+
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:layout_marginHorizontal="3dp"
+                       android:background="@color/white"/>
+
+                   <LinearLayout
+                       android:padding="5dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginHorizontal="15dp"
+                       android:background="@null">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:fontFamily="@font/font_semi_bold"
+                           android:text="You Pay"
+                           android:textColor="@color/textColor"
+                           android:textSize="16sp" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:fontFamily="@font/font_bold"
+                           android:gravity="center"
+                           android:text="$ 0"
+                           android:textColor="@color/textColor"
+                           android:textSize="16sp" />
+                   </LinearLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginHorizontal="16dp"
+               android:layout_marginTop="15dp"
+               android:background="@null">
+
+               <TextView
+                   android:id="@+id/tvPromocode"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:fontFamily="@font/font_bold"
+                   android:text="Got a Promo code? "
+                   android:textColor="@color/textColor"
+                   android:textSize="16sp" />
+
+               <TextView
+                   android:id="@+id/tvOffers"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/font_bold"
+                   android:gravity="center"
+                   android:text="See Your offers"
+                   android:textColor="@color/textColor"
+                   android:textSize="16sp" />
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/tvCheckout"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/box_50dp"
+               android:backgroundTint="@color/colorPrimary"
+               android:fontFamily="@font/font_bold"
+               android:includeFontPadding="true"
+               android:gravity="center"
+               android:text="CHECKOUT"
+               android:textColor="@color/white"
+               android:textSize="16sp" />
+
+           </LinearLayout>
+
+
+       </androidx.core.widget.NestedScrollView>
+
+   </LinearLayout>
+
+</layout>

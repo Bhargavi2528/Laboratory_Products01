@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DashboardModule.activity.AddAddressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:id="@+id/lToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <include
+                layout="@layout/toolbar"
+                android:id="@+id/toolbar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginVertical="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/box_10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginVertical="7dp"
+                        android:paddingHorizontal="5dp"
+                        android:background="@drawable/stroke_box"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_location" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray" />
+
+                        <EditText
+                            android:id="@+id/edtSearchlocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="14dp"
+                            android:background="@null"
+                            android:fontFamily="@font/font_regular"
+                            android:hint="@string/searchlocation"
+                            android:includeFontPadding="false"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/textColor"
+                            android:textColorHint="@color/textColorLight"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginVertical="7dp"
+                        android:paddingHorizontal="5dp"
+                        android:background="@drawable/stroke_box"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_location" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray" />
+
+                        <EditText
+                            android:id="@+id/edtFlatno"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="14dp"
+                            android:background="@null"
+                            android:fontFamily="@font/font_regular"
+                            android:hint="@string/flatno"
+                            android:includeFontPadding="false"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textColor="@color/textColor"
+                            android:textColorHint="@color/textColorLight"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginVertical="7dp"
+                        android:paddingHorizontal="5dp"
+                        android:background="@drawable/stroke_box"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_streetname" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray" />
+
+                        <EditText
+                            android:id="@+id/edtStreetname"
+                            android:layout_width="0dp"
+                            android:layout_weight="10"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="14dp"
+                            android:background="@null"
+                            android:fontFamily="@font/font_regular"
+                            android:hint="@string/streetname"
+                            android:includeFontPadding="false"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="@color/textColor"
+                            android:textColorHint="@color/textColorLight"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginVertical="7dp"
+                        android:paddingHorizontal="5dp"
+                        android:background="@drawable/stroke_box"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_landmark" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray" />
+
+                        <EditText
+                            android:id="@+id/edtLandmark"
+                            android:layout_width="0dp"
+                            android:layout_weight="10"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="14dp"
+                            android:background="@null"
+                            android:fontFamily="@font/font_regular"
+                            android:hint="@string/landmark"
+                            android:includeFontPadding="false"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="@color/textColor"
+                            android:textColorHint="@color/textColorLight"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginVertical="7dp"
+                        android:paddingHorizontal="5dp"
+                        android:background="@drawable/stroke_box"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_pincode" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray" />
+
+                        <EditText
+                            android:id="@+id/edtPincode"
+                            android:layout_width="0dp"
+                            android:layout_weight="10"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="14dp"
+                            android:background="@null"
+                            android:fontFamily="@font/font_regular"
+                            android:hint="@string/pincode"
+                            android:includeFontPadding="false"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="@color/textColor"
+                            android:textColorHint="@color/textColorLight"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginVertical="7dp"
+                        android:paddingHorizontal="5dp"
+                        android:background="@drawable/stroke_box"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="5dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_phone" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray" />
+
+                        <EditText
+                            android:id="@+id/edtNumber"
+                            android:layout_width="0dp"
+                            android:layout_weight="10"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="14dp"
+                            android:background="@null"
+                            android:fontFamily="@font/font_regular"
+                            android:hint="@string/mobile"
+                            android:includeFontPadding="false"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="@color/textColor"
+                            android:textColorHint="@color/textColorLight"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvAddmember"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginVertical="7dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/box_50dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/font_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/addaddress"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

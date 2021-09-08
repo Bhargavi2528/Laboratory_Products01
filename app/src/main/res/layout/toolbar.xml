@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:background="@drawable/box_10dp">
+
+            <ImageView
+                android:id="@+id/ivBackarrow"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:padding="7dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_backarrow"
+                app:tint="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tvToolbar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/font_semi_bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:padding="7dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic__notification"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

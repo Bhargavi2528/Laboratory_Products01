@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/transparnt">
+
+        <LinearLayout
+            android:id="@+id/lHome"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic__home"
+                android:adjustViewBounds="true"
+                app:tint="@color/bottom_ic_Selection" />
+
+            <TextView
+                android:id="@+id/tvHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:text="@string/home"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:fontFamily="@font/font_regular"
+                android:textColor="@color/bottom_Selection"
+                android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLocation"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic__locationlab"
+                android:adjustViewBounds="true"
+                app:tint="@color/bottom_ic_unSelection" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:text="@string/lablocation"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:fontFamily="@font/font_regular"
+                android:textColor="@color/bottom_unSelection"
+                android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lReports"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivReports"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic__myreport"
+                android:adjustViewBounds="true"
+                app:tint="@color/bottom_ic_unSelection" />
+
+            <TextView
+                android:id="@+id/tvReports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:text="@string/myreports"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:fontFamily="@font/font_regular"
+                android:textColor="@color/bottom_unSelection"
+                android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lCart"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivCart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic__cart"
+                android:adjustViewBounds="true"
+                app:tint="@color/bottom_ic_unSelection" />
+
+            <TextView
+                android:id="@+id/tvCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:text="@string/cart"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:fontFamily="@font/font_regular"
+                android:textColor="@color/bottom_unSelection"
+                android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lAccount"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivAccount"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic__account"
+                android:adjustViewBounds="true"
+                app:tint="@color/bottom_ic_unSelection" />
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:text="@string/account"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:fontFamily="@font/font_regular"
+                android:textColor="@color/bottom_unSelection"
+                android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

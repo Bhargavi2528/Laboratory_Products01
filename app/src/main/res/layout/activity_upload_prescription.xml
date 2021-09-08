@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DashboardModule.activity.UploadPrescriptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_semi_bold"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="Upload photograph of the pathology\ntest prescription provoded by the\ndoctor"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/box_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/ic_camera"
+                            android:text="Camera"
+                            app:tint="@color/colorPrimary" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Camera"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/textColor"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/font_bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/box_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/ic_gallery"
+                            android:text="Camera"
+                            app:tint="@color/colorPrimary" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gallery"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/textColor"
+                            android:fontFamily="@font/font_bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/box_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/ic_past_prescription"
+                            android:text="Camera"
+                            app:tint="@color/colorPrimary" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Past Prescriptions"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/textColor"
+                            android:fontFamily="@font/font_bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

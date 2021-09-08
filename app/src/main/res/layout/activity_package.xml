@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DashboardModule.activity.PackageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:background="@drawable/box_10dp">
+
+            <ImageView
+                android:id="@+id/ivBackarrow"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:padding="7dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_backarrow"
+                app:tint="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/tvToolbar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/font_semi_bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:padding="7dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic__notification"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/stroke_gray_solid"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/font_medium"
+                android:gravity="left|center"
+                android:text="Search test"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic__search" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:padding="7dp"
+                        android:background="@drawable/box_10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivPackage"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/grid_one" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_bold"
+                                android:maxLines="1"
+                                android:text="Accuris B+ve Champion Package"
+                                android:textColor="@color/textColor"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_medium"
+                                android:text="57 test parameters"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <RelativeLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/tvMoney"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/font_semi_bold"
+                                    android:text="$ 2700"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="16sp" />
+
+                                <LinearLayout
+                                    android:id="@+id/lDiscount"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_toRightOf="@+id/tvMoney"
+                                    android:background="@drawable/circle"
+                                    android:backgroundTint="@color/colorPrimaryDark"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/tvdiscount"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:adjustViewBounds="true"
+                                        android:gravity="center"
+                                        android:fontFamily="@font/font_regular"
+                                        android:textSize="12sp"
+                                        android:text="33% \noff"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lCart"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="15dp"
+                                    android:background="@drawable/circle"
+                                    android:backgroundTint="@color/colorAccent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="14dp"
+                                        android:layout_weight="1"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/ic_cart"
+                                        app:tint="@color/white" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="7dp"
+                    android:background="@drawable/box_10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivPackage1"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/grid_one" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_bold"
+                            android:maxLines="1"
+                            android:text="Accuris B+ve Champion Package"
+                            android:textColor="@color/textColor"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_medium"
+                            android:text="57 test parameters"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvMoney1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_semi_bold"
+                                android:text="$ 2700"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:id="@+id/lDiscount1"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_toRightOf="@+id/tvMoney1"
+                                android:background="@drawable/circle"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tvdiscount1"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:adjustViewBounds="true"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/font_regular"
+                                    android:textSize="12sp"
+                                    android:text="33% \noff"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lCart1"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/circle"
+                                android:backgroundTint="@color/colorAccent"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="14dp"
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_cart"
+                                    app:tint="@color/white" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="7dp"
+                    android:background="@drawable/box_10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivPackage2"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/grid_one" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_bold"
+                            android:maxLines="1"
+                            android:text="Accuris B+ve Champion Package"
+                            android:textColor="@color/textColor"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_medium"
+                            android:text="57 test parameters"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvMoney2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_semi_bold"
+                                android:text="$ 2700"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:id="@+id/lDiscount2"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_toRightOf="@+id/tvMoney2"
+                                android:background="@drawable/circle"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tvdiscount2"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:adjustViewBounds="true"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/font_regular"
+                                    android:textSize="12sp"
+                                    android:text="33% \noff"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lCart2"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/circle"
+                                android:backgroundTint="@color/colorAccent"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="14dp"
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_cart"
+                                    app:tint="@color/white" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="7dp"
+                    android:background="@drawable/box_10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivPackage3"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/grid_one" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_bold"
+                            android:maxLines="1"
+                            android:text="Accuris B+ve Champion Package"
+                            android:textColor="@color/textColor"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_medium"
+                            android:text="57 test parameters"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvMoney3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_semi_bold"
+                                android:text="$ 2700"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:id="@+id/lDiscount3"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_toRightOf="@+id/tvMoney3"
+                                android:background="@drawable/circle"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tvdiscount3"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:adjustViewBounds="true"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/font_regular"
+                                    android:textSize="12sp"
+                                    android:text="33% \noff"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lCart3"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/circle"
+                                android:backgroundTint="@color/colorAccent"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="14dp"
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_cart"
+                                    app:tint="@color/white" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="7dp"
+                    android:background="@drawable/box_10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivPackage4"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/grid_one" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_bold"
+                            android:maxLines="1"
+                            android:text="Accuris B+ve Champion Package"
+                            android:textColor="@color/textColor"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_medium"
+                            android:text="57 test parameters"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvMoney4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_semi_bold"
+                                android:text="$ 2700"
+                                android:textColor="@color/textColor"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:id="@+id/lDiscount4"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_toRightOf="@+id/tvMoney4"
+                                android:background="@drawable/circle"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tvdiscount4"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:adjustViewBounds="true"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/font_regular"
+                                    android:textSize="12sp"
+                                    android:text="33% \noff"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lCart4"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/circle"
+                                android:backgroundTint="@color/colorAccent"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="14dp"
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_cart"
+                                    app:tint="@color/white" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

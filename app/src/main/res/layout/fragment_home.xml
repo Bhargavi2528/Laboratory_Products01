@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DashboardModule.frgement.HomeFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:background="@drawable/background">
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:scrollbars="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:paddingHorizontal="15dp"
+       android:paddingTop="10dp">
+
+      <LinearLayout
+          android:layout_marginVertical="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+         <LinearLayout
+             android:id="@+id/lSearchBook"
+             android:layout_width="match_parent"
+             android:layout_height="75dp"
+             android:layout_marginVertical="7dp"
+             android:paddingHorizontal="5dp"
+             android:background="@drawable/stroke_solid"
+             android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivSearchBook"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic__search"
+                app:tint="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingVertical="5dp"
+                android:layout_marginLeft="14dp"
+                android:gravity="center">
+
+               <TextView
+                   android:id="@+id/tvSearchBook"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@null"
+                   android:fontFamily="@font/font_bold"
+                   android:text="@string/searchtests"
+                   android:includeFontPadding="false"
+                   android:inputType="text"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="16sp" />
+
+               <TextView
+                   android:id="@+id/tvSearchBook1"
+                   android:layout_weight="2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@null"
+                   android:fontFamily="@font/font_regular"
+                   android:text="Book Test for you and your loved ones"
+                   android:includeFontPadding="false"
+                   android:textColor="@color/textColor"
+                   android:textSize="14sp" />
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/lUploadpriscription"
+             android:layout_width="match_parent"
+             android:layout_height="85dp"
+             android:layout_marginVertical="7dp"
+             android:paddingHorizontal="5dp"
+             android:background="@drawable/stroke_solid"
+             android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivUploadpriscription"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_camera01"
+                app:tint="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingVertical="5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14dp"
+                android:gravity="center">
+
+               <TextView
+                   android:id="@+id/tvUploadpriscription"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@null"
+                   android:fontFamily="@font/font_bold"
+                   android:text="@string/uploadpriscription"
+                   android:layout_marginTop="5dp"
+                   android:includeFontPadding="false"
+                   android:inputType="text"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="16sp" />
+
+               <TextView
+                   android:id="@+id/tvUploadpriscription1"
+                   android:layout_weight="2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@null"
+                   android:fontFamily="@font/font_regular"
+                   android:text="Upload photograph of the pathology test prescription provided by the doctor"
+                   android:includeFontPadding="false"
+                   android:textColor="@color/textColor"
+                   android:textSize="14sp" />
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_marginVertical="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/box_10dp"
+          android:orientation="vertical">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginVertical="7dp"
+             android:fontFamily="@font/font_bold"
+             android:padding="7dp"
+             android:text="@string/healthcheckuppackage"
+             android:textColor="@color/textColor"
+             android:textSize="16sp" />
+
+         <GridLayout
+             android:layout_width="match_parent"
+             android:layout_height="350dp"
+             android:orientation="vertical"
+             android:rowCount="2"
+             android:columnCount="2">
+
+            <RelativeLayout
+                android:id="@+id/rlGrid1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/grid_one">
+
+               <LinearLayout
+                   android:background="@drawable/box_rect"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="5dp"
+                   android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@null"
+                      android:fontFamily="@font/font_semi_bold"
+                      android:text="AccurisB+veChampion"
+                      android:includeFontPadding="false"
+                      android:maxLines="1"
+                      android:textColor="@color/black"
+                      android:textSize="10sp"/>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@null"
+                         android:fontFamily="@font/font_semi_bold"
+                         android:text="₹2700"
+                         android:includeFontPadding="false"
+                         android:maxLines="1"
+                         android:textColor="@color/black"
+                         android:textSize="12sp"/>
+
+<!--                     <TextView-->
+<!--                         android:layout_width="wrap_content"-->
+<!--                         android:layout_height="wrap_content"-->
+<!--                         android:background="@null"-->
+<!--                         android:fontFamily="@font/font_semi_bold"-->
+<!--                         android:text="₹6120"-->
+<!--                         android:includeFontPadding="false"-->
+<!--                         android:layout_marginLeft="5dp"-->
+<!--                         android:maxLines="1"-->
+<!--                         android:textColor="@color/black"-->
+<!--                         android:textSize="12sp"/>-->
+
+                  </LinearLayout>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@null"
+                         android:fontFamily="@font/font_semi_bold"
+                         android:text="57 Test Parameters"
+                         android:includeFontPadding="false"
+                         android:maxLines="1"
+                         android:textColor="@color/textColor"
+                         android:textSize="12sp"/>
+
+               </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGrid2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/grid_two">
+
+               <LinearLayout
+                   android:background="@drawable/box_rect"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="5dp"
+                   android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@null"
+                      android:fontFamily="@font/font_semi_bold"
+                      android:text="Covid-19 Antibody-IgG Test"
+                      android:includeFontPadding="false"
+                      android:maxLines="1"
+                      android:textColor="@color/black"
+                      android:textSize="10sp"/>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@null"
+                         android:fontFamily="@font/font_semi_bold"
+                         android:text="₹600"
+                         android:includeFontPadding="false"
+                         android:maxLines="1"
+                         android:textColor="@color/black"
+                         android:textSize="12sp"/>
+
+                     <!--                     <TextView-->
+                     <!--                         android:layout_width="wrap_content"-->
+                     <!--                         android:layout_height="wrap_content"-->
+                     <!--                         android:background="@null"-->
+                     <!--                         android:fontFamily="@font/font_semi_bold"-->
+                     <!--                         android:text="₹6120"-->
+                     <!--                         android:includeFontPadding="false"-->
+                     <!--                         android:layout_marginLeft="5dp"-->
+                     <!--                         android:maxLines="1"-->
+                     <!--                         android:textColor="@color/black"-->
+                     <!--                         android:textSize="12sp"/>-->
+
+                  </LinearLayout>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@null"
+                      android:fontFamily="@font/font_semi_bold"
+                      android:text="1 Test Parameters"
+                      android:includeFontPadding="false"
+                      android:maxLines="1"
+                      android:textColor="@color/textColor"
+                      android:textSize="12sp"/>
+
+               </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGrid3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/grid_three">
+
+               <LinearLayout
+                   android:background="@drawable/box_rect"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="5dp"
+                   android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@null"
+                      android:fontFamily="@font/font_semi_bold"
+                      android:text="Covid-19 RT-PCR"
+                      android:includeFontPadding="false"
+                      android:maxLines="1"
+                      android:textColor="@color/black"
+                      android:textSize="10sp"/>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@null"
+                         android:fontFamily="@font/font_semi_bold"
+                         android:text="₹550"
+                         android:includeFontPadding="false"
+                         android:maxLines="1"
+                         android:textColor="@color/black"
+                         android:textSize="12sp"/>
+
+                     <!--                     <TextView-->
+                     <!--                         android:layout_width="wrap_content"-->
+                     <!--                         android:layout_height="wrap_content"-->
+                     <!--                         android:background="@null"-->
+                     <!--                         android:fontFamily="@font/font_semi_bold"-->
+                     <!--                         android:text="₹6120"-->
+                     <!--                         android:includeFontPadding="false"-->
+                     <!--                         android:layout_marginLeft="5dp"-->
+                     <!--                         android:maxLines="1"-->
+                     <!--                         android:textColor="@color/black"-->
+                     <!--                         android:textSize="12sp"/>-->
+
+                  </LinearLayout>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@null"
+                      android:fontFamily="@font/font_semi_bold"
+                      android:text="1 Test Parameters"
+                      android:includeFontPadding="false"
+                      android:maxLines="1"
+                      android:textColor="@color/textColor"
+                      android:textSize="12sp"/>
+
+               </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGrid4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/grid_four">
+
+               <LinearLayout
+                   android:background="@drawable/box_rect"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="5dp"
+                   android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@null"
+                      android:fontFamily="@font/font_semi_bold"
+                      android:text="Covid 19 Flu Profile"
+                      android:includeFontPadding="false"
+                      android:maxLines="1"
+                      android:textColor="@color/black"
+                      android:textSize="10sp"/>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@null"
+                         android:fontFamily="@font/font_semi_bold"
+                         android:text="₹2500"
+                         android:includeFontPadding="false"
+                         android:maxLines="1"
+                         android:textColor="@color/black"
+                         android:textSize="12sp"/>
+
+                     <!--                     <TextView-->
+                     <!--                         android:layout_width="wrap_content"-->
+                     <!--                         android:layout_height="wrap_content"-->
+                     <!--                         android:background="@null"-->
+                     <!--                         android:fontFamily="@font/font_semi_bold"-->
+                     <!--                         android:text="₹6120"-->
+                     <!--                         android:includeFontPadding="false"-->
+                     <!--                         android:layout_marginLeft="5dp"-->
+                     <!--                         android:maxLines="1"-->
+                     <!--                         android:textColor="@color/black"-->
+                     <!--                         android:textSize="12sp"/>-->
+
+                  </LinearLayout>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@null"
+                      android:fontFamily="@font/font_semi_bold"
+                      android:text="6 Test Parameters"
+                      android:includeFontPadding="false"
+                      android:maxLines="1"
+                      android:textColor="@color/textColor"
+                      android:textSize="12sp"/>
+
+               </LinearLayout>
+
+            </RelativeLayout>
+
+         </GridLayout>
+
+         <TextView
+             android:id="@+id/tvHealthcheckup"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="right"
+             android:layout_marginBottom="15dp"
+             android:fontFamily="@font/font_bold"
+             android:text="View All"
+             android:layout_marginRight="10dp"
+             android:textColor="@color/colorPrimary"
+             android:textSize="16sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/lOffers"
+          android:layout_marginVertical="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginVertical="7dp"
+             android:fontFamily="@font/font_bold"
+             android:text="Offers For You"
+             android:textColor="@color/textColor"
+             android:textSize="16sp" />
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="135dp"
+             android:adjustViewBounds="true"
+             android:scaleType="centerCrop"
+             android:src="@drawable/rlative_bg" />
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/font_bold"
+                android:text="Vaccine Toh Lagvayi Par"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="#FDD835"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/b"
+                android:layout_below="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/font_bold"
+                android:text="COVID-19"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/a"
+                android:layout_toRightOf="@+id/b"
+                android:fontFamily="@font/font_bold"
+                android:text="IgG Antibody Test"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/d"
+                android:layout_below="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/font_bold"
+                android:text="Karavya?"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/e"
+                android:layout_toRightOf="@+id/d"
+                android:layout_below="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="105dp"
+                android:fontFamily="@font/font_bold"
+                android:text="BOOK NOW!  > > > > >"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/white"
+                android:background="#039BE5"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/f"
+                android:layout_toRightOf="@+id/d"
+                android:layout_below="@+id/e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_gravity="right"
+                android:paddingHorizontal="7dp"
+                android:fontFamily="@font/font_bold"
+                android:text="Call: +91 99137 18612"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+         </RelativeLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/box_rect"
+            android:backgroundTint="#E53935">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="left"
+             android:paddingHorizontal="15dp"
+             android:layout_marginVertical="7dp"
+             android:fontFamily="@font/font_semi_bold"
+             android:text="COVID - 19 Immunity Test"
+             android:textColor="@color/textColor"
+             android:textSize="18sp"/>
+         </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_marginVertical="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@drawable/box_10dp"
+          android:padding="7dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginVertical="7dp"
+             android:fontFamily="@font/font_bold"
+             android:text="Not sure what test to take ?"
+             android:textColor="@color/textColor"
+             android:textSize="16sp" />
+
+         <LinearLayout
+             android:id="@+id/lpackages"
+             android:layout_width="match_parent"
+             android:layout_height="45dp"
+             android:layout_marginVertical="7dp"
+             android:paddingHorizontal="5dp"
+             android:gravity="center"
+             android:background="@drawable/stroke_box"
+             android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic__gift"
+                app:tint="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+               <TextView
+                   android:layout_weight="2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@null"
+                   android:fontFamily="@font/font_medium"
+                   android:includeFontPadding="false"
+                   android:maxLines="1"
+                   android:text="Chose from our Popular Packeges"
+                   android:layout_marginLeft="14dp"
+                   android:gravity="center_vertical"
+                   android:textColor="@color/textColor"
+                   android:textSize="16sp" />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/lCallus"
+             android:layout_width="match_parent"
+             android:layout_height="45dp"
+             android:layout_marginVertical="7dp"
+             android:paddingHorizontal="5dp"
+             android:gravity="center"
+             android:background="@drawable/stroke_box"
+             android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic__call"
+                app:tint="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/font_medium"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="Talk to our Health Advisor"
+                android:layout_marginLeft="14dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+         </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:background="@drawable/box_10dp"
+          android:paddingHorizontal="10dp"
+          android:paddingVertical="10dp"
+          android:layout_marginVertical="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginVertical="7dp"
+             android:fontFamily="@font/font_bold"
+             android:text="Search by Risk Areas"
+             android:textColor="@color/textColor"
+             android:textSize="16sp" />
+
+         <HorizontalScrollView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+               <LinearLayout
+                   android:id="@+id/lLiver"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/box_10dp"
+                      android:src="@drawable/ic_liver01"
+                      app:tint="@color/colorPrimaryDark"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:fontFamily="@font/font_medium"
+                      android:text="@string/liver"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/lKidney"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/box_10dp"
+                      android:src="@drawable/ic__kideny"
+                      app:tint="@color/colorPrimaryDark"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:fontFamily="@font/font_medium"
+                      android:text="@string/kidney"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/lBone"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/box_10dp"
+                      android:src="@drawable/ic__bone"
+                      app:tint="@color/colorPrimaryDark"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:fontFamily="@font/font_medium"
+                      android:text="@string/bone"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/lVitamin"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/box_10dp"
+                      android:src="@drawable/ic__vitamin"
+                      app:tint="@color/colorPrimaryDark"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:fontFamily="@font/font_medium"
+                      android:text="@string/vitamin"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/lDiabetes"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/box_10dp"
+                      android:src="@drawable/ic__diabetes"
+                      app:tint="@color/colorPrimaryDark"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:fontFamily="@font/font_medium"
+                      android:text="@string/diabetes"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+         </HorizontalScrollView>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginVertical="7dp"
+             android:fontFamily="@font/font_bold"
+             android:text="Search by Habits"
+             android:textColor="@color/textColor"
+             android:textSize="16sp" />
+
+         <HorizontalScrollView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+               <LinearLayout
+                   android:id="@+id/lSmoking"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/box_10dp"
+                      android:src="@drawable/ic__smoking"
+                      app:tint="@color/colorPrimaryDark" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:fontFamily="@font/font_bold"
+                      android:text="@string/smoking"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/lNoexercise"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/box_10dp"
+                      android:src="@drawable/ic__noexercise"
+                      app:tint="@color/colorPrimaryDark"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:fontFamily="@font/font_bold"
+                      android:text="@string/noexercise"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/lAlcohol"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/box_10dp"
+                      android:src="@drawable/ic__alchohol"
+                      app:tint="@color/colorPrimaryDark"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:fontFamily="@font/font_bold"
+                      android:text="@string/alcohol"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/lJunkfood"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/box_10dp"
+                      android:src="@drawable/ic__fastfood"
+                      app:tint="@color/colorPrimaryDark"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:fontFamily="@font/font_bold"
+                      android:text="@string/junkfood"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/lDrugaddiction"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/box_10dp"
+                      android:src="@drawable/ic__drug"
+                      app:tint="@color/colorPrimaryDark"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:fontFamily="@font/font_bold"
+                      android:text="@string/drugaddiction"
+                      android:textColor="@color/textColor"
+                      android:textSize="16sp" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+         </HorizontalScrollView>
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+   </androidx.core.widget.NestedScrollView>
+
+   </LinearLayout>
+
+
+</layout>

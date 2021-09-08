@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0e3475</color>
+    <color name="colorPrimaryDark">#000f49</color>
+    <color name="colorAccent">#495da4</color>
+    <color name="colorSecondary">#CA74E1</color>
+    <color name="colorSecondaryVariant">#8E24AA</color>
+    <color name="unselected_tab">#325289</color>
+    <color name="bottom_unSelection">#6F7379</color>
+    <color name="bottom_ic_unSelection">#2A2D32</color>
+    <color name="bottom_Selection">#3949AB</color>
+    <color name="bottom_ic_Selection">#051998</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="stroke_color">#b5bfbf</color>
+    <color name="gray">#808080</color>
+    <color name="transparnt">#40FFFFFF</color>
+    <color name="textColor">#393636</color>
+    <color name="textColorLight">#6A6C70</color>
+</resources>
